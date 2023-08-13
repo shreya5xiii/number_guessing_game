@@ -1,0 +1,46 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>good one</title>
+        <link rel="stylesheet" href="no_guessing.css">
+    </head>
+    <body>
+      <div id="main">
+        <h1 id="head">NUMBER GUESSING GAME</h1>
+        <h3 id="state">Guess one number</h3>
+        <input id="input" type="text" placeholder="enter..." >
+        <button onclick="fun()" id="but">click</button>
+      </div>
+      
+      <script>
+        
+        let n=Math.floor(Math.random()*100)
+       
+        function fun(){
+            let k=document.getElementById('input').value;
+            
+              if(k==n){
+                document.getElementById('head').innerHTML="You win!!!";
+                document.getElementById('head').id="head2";
+                
+                document.getElementById('state').innerHTML="play again";
+                document.getElementById('input').style.display='none';
+                let m= document.getElementById('but');
+                m.addEventListener("click",function(){window.location.reload()})
+               
+  
+              }
+              else if(k>n){
+                document.getElementById('state').innerHTML="Enter smaller number";
+              }
+              else if(k<n){
+                document.getElementById('state').innerHTML="Enter bigger number";
+              }
+              else {
+                document.getElementById('state').innerHTML="Guess one number";
+              }
+           }
+</script>
+    </body>
+</html>
