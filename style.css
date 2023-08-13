@@ -1,0 +1,117 @@
+body{
+   
+    background-image: linear-gradient(to right bottom, rgb(216, 64, 142),rgb(223, 177, 84));
+    overflow: hidden;
+    background-attachment: fixed;
+}
+#main{
+    
+      
+    margin:auto;
+   color:rgb(244, 237, 244);
+   background-color: rgba(255,255,255,0.1);
+   width: 500px;
+   height: 220px;
+   margin-left:32%;
+   margin-top: 150px;
+   opacity: 1;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 70px;
+    box-shadow:0px 0px 20px rgb(52, 50, 52);
+    position: fixed;
+    z-index: 15;
+   
+}
+input,button{
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0px 0px 5px black;
+    position: relative;
+    height: 30px;
+    background-color: rgba(255,255,255,0.2);
+    color: aliceblue;
+    margin: 0px 20px 0px 10px;
+    padding: 5px;
+    
+}
+input::placeholder{
+    color: white;
+}
+h1,h3{
+    text-shadow:0px 0px 3px black; 
+   
+}
+
+#head2{
+    color: aqua;
+    animation: example 1s infinite linear ;
+    font-size: 45px;
+}
+@keyframes example{
+  0%{
+    filter: hue-rotate(0deg);
+   transform: scale(1);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+    transform: scale(1.2);
+  }
+  100%{
+    filter: hue-rotate(0deg);
+    transform: scale(1);
+  }
+}
+
+
+@media (max-width:410px){
+    #main{
+        width: 80%;
+        margin-left:10%;
+       margin-top: 110px;
+       height: 250px;
+    }
+   input{
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 20px;
+   }
+   h1{
+    margin: 0px 10px;
+   }
+ h3{
+    margin: 30px;
+ }
+
+
+   
+}
+@media (max-width:650px){
+    #main{
+        width: 80%;
+        margin-left:10%;
+
+    }
+  h1{
+    font-size: 22px;
+  }
+
+
+   
+}
+@media (max-width:800px) and (min-width:650px){
+    #main{
+        width: 520px;
+        margin-left:15%;
+    }
+
+}
+@media (max-width:1000px) and (min-width:800px){
+    #main{
+        width: 550px;
+        margin-left:22%;
+    }
+  
+
+   
+}
